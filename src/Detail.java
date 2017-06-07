@@ -1,5 +1,5 @@
 
-public class Detail implements Comparable<String> {
+public class Detail {
 	private String material;
 	private String purpose;
 
@@ -47,11 +47,6 @@ public class Detail implements Comparable<String> {
 	public Detail setPrice(Integer price) {
 		this.price = price;
 		return this;
-	}
-
-	@Override
-	public int compareTo(String o) {
-		return this.purpose.compareTo(o);
 	}
 
 	@Override
