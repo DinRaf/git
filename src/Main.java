@@ -43,7 +43,7 @@ public class Main {
 		//Используем интерфейс Iterator чтоы пройтись по всем элементам коллекции
 		for (Iterator<Detail> detail = details.iterator(); detail.hasNext();) {
 			//Если назначение совпадает с введеным назначением
-			if (detail.next().compareTo(purpose) == 0) {
+			if (detail.next().getPurpose().compareTo(purpose) == 0) {
 				//Удаляем деталь
 				detail.remove();
 			}
